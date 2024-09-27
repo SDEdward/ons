@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+h1, p {
+    margin: 0; /* Remove default margin */
+}
+
+
+.topbar {
+    z-index: 2;
+    display: inline-block;
+    position: fixed;
+    background-color: rgb(30, 30, 30);
+    width: 98vw;
+    height: 20vh;
+    top: 2vh;
+    right: 1vw;
+    border-radius: 15px;
+}
+
+.us {
+    z-index: 3;
+    font-size: 5vw; /* Use viewport width for responsive font size */
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute; /* Position it absolutely */
+    left: 50%; /* Move to the center */
+    transform: translate(-50%, -50%); /* Adjust to center it both horizontally and vertically */
+    top: 50%; /* Move it down to the vertical center */
+    text-align: center; /* Center text within the item */
+    max-height: 20vh; /* Ensure it doesn't exceed the height of the topbar */
+    overflow: hidden; /* Hide overflow if text is too large */
+    min-height: 10vh; /* Set a minimum height for the text area */
+}
+
+
+/* Optional: Media Queries for further control */
+@media (max-width: 600px) {
+    .center {
+        font-size: 18px; /* Slightly smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .center {
+        font-size: 16px; /* Even smaller font size for very small screens */
+    }
+}
+
+
+
+
+
+.maintext {
+    text-align: center;
+    font-size: 9vw; /* Responsive font size */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainp {
+    text-align: center;
+    font-size: 2vw; /* Responsive font size */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+/* Default link color */
+a {
+    color: white; /* Change this to your desired color */
+    text-decoration: none;
+}
+
+/* Visited link color */
+a:visited {
+    color: white; /* Change this to your desired color */
+}
+
+/* Hover link color */
+a:hover {
+    color: blue; /* Change this to your desired color */
+    transition: color 0.3s ease;
+}
+
+/* Active link color */
+a:active {
+    color: white; /* Change this to your desired color */
+}
+
