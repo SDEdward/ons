@@ -7,6 +7,7 @@ body {
     align-items: center; /* Center horizontally */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
+    cursor: default;
 }
 
 h1, p {
@@ -38,8 +39,14 @@ h1, p {
     max-height: 20vh; /* Ensure it doesn't exceed the height of the topbar */
     overflow: hidden; /* Hide overflow if text is too large */
     min-height: 10vh; /* Set a minimum height for the text area */
+    cursor: pointer;
+    transition: color 0.5s ease;
 }
 
+.us:hover {
+    animation: clickme;
+    color: rgb(0, 0, 255,);
+}
 
 /* Optional: Media Queries for further control */
 @media (max-width: 600px) {
