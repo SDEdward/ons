@@ -1,13 +1,57 @@
 body {
     background-color: black;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Center horizontally */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
     cursor: default;
+}
+
+.topbar {
+    z-index: 2;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: fixed; /* Keep it fixed */
+    background-color: rgb(30, 30, 30);
+    width: 100%; /* Full width */
+    height: calc(10vh + 2vw); /* Height scales with viewport height and width */
+    max-height: 15vh; /* Set a maximum height */
+    top: 2vh; /* Fixed position from the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    border-radius: 15px;
+    padding: 0 2vw; /* Add horizontal padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Optional: Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .topbar {
+        height: calc(8vh + 2vw); /* Adjust height for very small screens */
+        padding: 0 1vw; /* Reduce padding for smaller screens */
+    }
+}
+
+.us {
+    z-index: 3;
+    font-size: 5vw; /* Responsive font size */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /* Center text within the item */
+    max-height: 20vh; /* Ensure it doesn't exceed the height of the topbar */
+    overflow: hidden; /* Hide overflow if text is too large */
+    min-height: 10vh; /* Set a minimum height for the text area */
+    cursor: pointer;
+    transition: color 0.5s ease;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    flex: 1; /* Allow text to take available space */
+}
+
+/* Additional media query for very small screens */
+@media (max-width: 320px) {
+    .us {
+        font-size: 6vw; /* Increase font size for very small screens */
+    }
 }
 
 h1, p {
@@ -15,33 +59,7 @@ h1, p {
 }
 
 
-.topbar {
-    z-index: 2;
-    display: inline-block;
-    position: fixed;
-    background-color: rgb(30, 30, 30);
-    width: 98vw;
-    height: 15vh;
-    top: 2vh;
-    right: 1vw;
-    border-radius: 15px;
-}
 
-.us {
-    z-index: 3;
-    font-size: 3vw; /* Use viewport width for responsive font size */
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute; /* Position it absolutely */
-    left: 50%; /* Move to the center */
-    transform: translate(-50%, -50%); /* Adjust to center it both horizontally and vertically */
-    top: 50%; /* Move it down to the vertical center */
-    text-align: center; /* Center text within the item */
-    max-height: 20vh; /* Ensure it doesn't exceed the height of the topbar */
-    overflow: hidden; /* Hide overflow if text is too large */
-    min-height: 10vh; /* Set a minimum height for the text area */
-    cursor: pointer;
-    transition: color 0.5s ease;
-}
 
 .us:hover {
     animation: clickme;
@@ -66,6 +84,7 @@ h1, p {
 
 
 .maintext {
+    margin-top: 20%;
     text-align: center;
     font-size: 9vw; /* Responsive font size */
     font-family: Arial, Helvetica, sans-serif;
