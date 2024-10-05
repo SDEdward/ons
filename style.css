@@ -1,9 +1,26 @@
 body {
-    background-color: black;
-    color: white;
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default margin */
-    cursor: default;
+  background-color: black;
+  color: white;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  cursor: default;
+}
+
+#donthide {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    position: absolute; /* Allows positioning with top */
+    top: 50%; /* Moves the element down to the middle of the container */
+    left: 50%; /* Moves the element to the middle of the container */
+    transform: translate(-50%, -50%); /* Adjusts the position to truly center the element */
+}
+
+
+.donthide {
+    max-width: 100%; /* Responsive image */
+    max-height: 100%; /* Responsive image */
+    opacity: 0;
 }
 
 .topbar {
@@ -12,41 +29,45 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     position: fixed; /* Keep it fixed */
-    background-color: rgb(30, 30, 30);
+    background-color: rgba(30, 30, 30, 0.65); /* Use RGBA for semi-transparent background */
     width: 100%; /* Full width */
     height: calc(10vh + 2vw); /* Height scales with viewport height and width */
     max-height: 15vh; /* Set a maximum height */
     top: 2vh; /* Fixed position from the top */
     left: 0; /* Align to the left */
     right: 0; /* Align to the right */
-    border-radius: 15px;
+    border-radius: 15px; /* Rounded corners */
     padding: 0 2vw; /* Add horizontal padding */
     box-sizing: border-box; /* Include padding in width calculation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
 
 /* Media query to adjust the topbar height and position on smaller screens */
 @media (max-width: 768px) {
-    .topbar {
-        height: calc(8vh + 2vw); /* Decrease height for smaller screens */
-        top: 1vh; /* Adjust top position */
-    }
+  .topbar {
+    height: calc(8vh + 2vw); /* Decrease height for smaller screens */
+    top: 1vh; /* Adjust top position */
+  }
 }
 
 @media (max-width: 480px) {
-    .topbar {
-        height: calc(6vh + 2vw); /* Further decrease height for very small screens */
-        top: 0.5vh; /* Adjust top position */
-        padding: 0 1vw; /* Reduce padding for smaller screens */
-    }
+  .topbar {
+    height: calc(
+      6vh + 2vw
+    ); /* Further decrease height for very small screens */
+    top: 0.5vh; /* Adjust top position */
+    padding: 0 1vw; /* Reduce padding for smaller screens */
+  }
 }
 
-
 @media (max-width: 240px) {
-    .topbar {
-        height: calc(2vh + 0.5vw); /* Further decrease height for very small screens */
-        top: 0.5vh; /* Adjust top position */
-        padding: 0 1vw; /* Reduce padding for smaller screens */
-    }
+  .topbar {
+    height: calc(
+      2vh + 0.5vw
+    ); /* Further decrease height for very small screens */
+    top: 0.5vh; /* Adjust top position */
+    padding: 0 1vw; /* Reduce padding for smaller screens */
+  }
 }
 
 .us {
@@ -57,87 +78,95 @@ body {
     max-height: 20vh; /* Ensure it doesn't exceed the height of the topbar */
     overflow: hidden; /* Hide overflow if text is too large */
     min-height: 10vh; /* Set a minimum height for the text area */
-    cursor: pointer;
-    transition: color 0.5s ease;
+    cursor: pointer; /* Change cursor to pointer */
+    transition: color 0.5s ease; /* Smooth color transition */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
     flex: 1; /* Allow text to take available space */
+    opacity: 1; /* Fully opaque */
 }
+
 
 /* Additional media query for very small screens */
 @media (max-width: 320px) {
-    .us {
-        margin-top: 2vh;
-        font-size: 6vw; /* Increase font size for very small screens */
-    }
+  .us {
+    margin-top: 2vh;
+    font-size: 6vw; /* Increase font size for very small screens */
+  }
 }
 
-h1, p {
-    margin: 0; /* Remove default margin */
+h1,
+p {
+  margin: 0; /* Remove default margin */
 }
-
-
-
 
 .us:hover {
-    animation: clickme;
-    color: rgb(0, 0, 255,);
+  animation: clickme;
+  color: rgb(0, 0, 255);
 }
 
 /* Optional: Media Queries for further control */
 @media (max-width: 600px) {
-    .center {
-        font-size: 18px; /* Slightly smaller font size for smaller screens */
-    }
+  .center {
+    font-size: 18px; /* Slightly smaller font size for smaller screens */
+  }
 }
 
 @media (max-width: 400px) {
-    .center {
-        font-size: 16px; /* Even smaller font size for very small screens */
-    }
+  .center {
+    font-size: 16px; /* Even smaller font size for very small screens */
+  }
 }
 
-
-
-
-
 .maintext {
-    margin-top: 20%;
-    text-align: center;
-    font-size: 9vw; /* Responsive font size */
-    font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20%;
+  text-align: center;
+  font-size: 9vw; /* Responsive font size */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .mainp {
-    text-align: center;
-    font-size: 2vw; /* Responsive font size */
-    font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 2vw; /* Responsive font size */
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
-
 
 /* Default link color */
 a {
-    color: white; /* Change this to your desired color */
-    text-decoration: none;
+  color: white; /* Change this to your desired color */
+  text-decoration: none;
 }
 
 /* Visited link color */
 a:visited {
-    color: white; /* Change this to your desired color */
+  color: white; /* Change this to your desired color */
 }
 
 /* Hover link color */
 a:hover {
-    color: blue; /* Change this to your desired color */
-    transition: color 0.3s ease;
+  color: blue; /* Change this to your desired color */
+  transition: color 0.3s ease;
 }
 
 /* Active link color */
 a:active {
-    color: white; /* Change this to your desired color */
+  color: white; /* Change this to your desired color */
 }
 
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
