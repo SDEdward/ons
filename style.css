@@ -5,6 +5,9 @@ body {
   margin: 0; /* Remove default margin */
   cursor: default;
 }
+h1,p {
+    margin: 0; /* Remove default margin */
+  }
 
 #donthide {
     display: flex; /* Enables flexbox layout */
@@ -29,7 +32,7 @@ body {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     position: fixed; /* Keep it fixed */
-    background-color: rgba(30, 30, 30, 0.65); /* Use RGBA for semi-transparent background */
+    background-color: rgba(30, 30, 30, 0.5); /* Use RGBA for semi-transparent background */
     width: 100%; /* Full width */
     height: calc(10vh + 2vw); /* Height scales with viewport height and width */
     max-height: 15vh; /* Set a maximum height */
@@ -42,34 +45,6 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
 
-/* Media query to adjust the topbar height and position on smaller screens */
-@media (max-width: 768px) {
-  .topbar {
-    height: calc(8vh + 2vw); /* Decrease height for smaller screens */
-    top: 1vh; /* Adjust top position */
-  }
-}
-
-@media (max-width: 480px) {
-  .topbar {
-    height: calc(
-      6vh + 2vw
-    ); /* Further decrease height for very small screens */
-    top: 0.5vh; /* Adjust top position */
-    padding: 0 1vw; /* Reduce padding for smaller screens */
-  }
-}
-
-@media (max-width: 240px) {
-  .topbar {
-    height: calc(
-      2vh + 0.5vw
-    ); /* Further decrease height for very small screens */
-    top: 0.5vh; /* Adjust top position */
-    padding: 0 1vw; /* Reduce padding for smaller screens */
-  }
-}
-
 .us {
     z-index: 7;
     font-size: 5vw; /* Responsive font size */
@@ -79,44 +54,24 @@ body {
     overflow: hidden; /* Hide overflow if text is too large */
     min-height: 10vh; /* Set a minimum height for the text area */
     cursor: pointer; /* Change cursor to pointer */
-    transition: color 0.5s ease; /* Smooth color transition */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
     flex: 1; /* Allow text to take available space */
     opacity: 1; /* Fully opaque */
 }
 
-
-/* Additional media query for very small screens */
-@media (max-width: 320px) {
-  .us {
-    margin-top: 2vh;
-    font-size: 6vw; /* Increase font size for very small screens */
-  }
+.us a {
+    color: rgb(255, 255, 255); /* Default color (white) */
+    text-decoration: none; /* Remove underline by default */
+    transition: color 0.5s ease; /* Smooth transition for color */
 }
 
-h1,
-p {
-  margin: 0; /* Remove default margin */
+.us a:hover {
+    color: rgb(60, 60, 60); /* Darker color on hover */
+    text-decoration: underline; /* Underline text on hover */
 }
 
-.us:hover {
-  animation: clickme;
-  color: rgb(0, 0, 255);
-}
 
-/* Optional: Media Queries for further control */
-@media (max-width: 600px) {
-  .center {
-    font-size: 18px; /* Slightly smaller font size for smaller screens */
-  }
-}
-
-@media (max-width: 400px) {
-  .center {
-    font-size: 16px; /* Even smaller font size for very small screens */
-  }
-}
 
 .maintext {
   margin-top: 20%;
@@ -131,21 +86,10 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Default link color */
-a {
-  color: white; /* Change this to your desired color */
-  text-decoration: none;
-}
 
 /* Visited link color */
 a:visited {
   color: white; /* Change this to your desired color */
-}
-
-/* Hover link color */
-a:hover {
-  color: blue; /* Change this to your desired color */
-  transition: color 0.3s ease;
 }
 
 /* Active link color */
