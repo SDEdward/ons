@@ -1,8 +1,9 @@
-**Us and Linus licence**
+#**Us and Linus licence**
+
 Us, Linus | 2024 | Will sue
 
 
-In order to use the software or distribute it you must be one of the creators (@SDEdward and Bunicutapeascari123) OR Linus Torvards
+In order to use the software or distribute it you must be one of the creators (@SDEdward and @Bunicutapeascari69) OR Linus Torvards
 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
