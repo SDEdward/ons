@@ -10,7 +10,7 @@ Here’s how you can get involved:
 
 ### 1. Get to Know the Project
 
-Take a moment to check out the project and see what we’re all about. Look through the docs and existing issues to get a feel for what’s going on.
+Take a moment to check out the project and see what we’re all about. Look through the code and existing issues to get a feel for what’s going on.
 
 ### 2. Check Out the Rules
 
