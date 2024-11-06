@@ -17,8 +17,8 @@ To keep our community friendly and productive, we expect all participants to adh
 4. **Be Constructive**: When providing feedback, focus on the issue, not the person. Aim to be helpful and constructive in your comments.
 
 5. **Be Mindful**: Remember that everyone is here to learn and grow. Be patient and understanding with others.
-6. 
-7. **No politics**: Noone wants to hear your opinion.
+
+6. **No politics**: Noone wants to hear your opinion.
 
 ## Swearing
 
@@ -32,9 +32,8 @@ If you encounter any behavior that violates this Code of Conduct, please report 
 
 Participants who violate this Code of Conduct may be warned, temporarily suspended, or permanently banned from the project, depending on the severity of the behavior.
 
-## Thank You!
+## Thank You
 
 Thank you for helping us create a positive and inclusive community. Together, we can make this project a great place for everyone!
-
 
 I hope i dont need to ever do a report.
