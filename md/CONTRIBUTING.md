@@ -1,6 +1,6 @@
 # Contributing to Our Project
 
-### Hey there! Thanks for wanting to help out!
+## Hey there! Thanks for wanting to help out
 
 We really appreciate it! Your contributions mean a lot to us and will help make this project even better.
 
@@ -23,6 +23,7 @@ We’re working on setting up a Discord server for chatting, but for now, we’r
 ### 4. How to Contribute
 
 If you somehow dont know:
+
 - **Fork the Repo**: Make a copy of the repo to play around with.
 - **Create a Branch**: Spin up a new branch for your feature or fix.
 - **Make Your Changes**: Go ahead and make your changes! Just keep our coding style in mind.
