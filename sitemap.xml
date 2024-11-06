@@ -3,9 +3,23 @@
         xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1">
   <url>
     <loc>https://ons.safacpealdraq.eu/</loc>
-    <lastmod>2024-10-09</lastmod>
+    <lastmod>2024-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://ons.safacpealdraq.eu/calculator/cindex.html</loc>
+    <lastmod>2024-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://ons.safacpealdraq.eu/images/rotate.png</loc>
+    <lastmod>2024-10-09</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
     <image:image>
       <image:loc>https://ons.safacpealdraq.eu/images/rotate.png</image:loc>
       <image:caption>Rotate</image:caption>

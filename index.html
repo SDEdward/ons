@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>our new site</title>
-    <meta
-      name="description"
-      content="A little site that is still wip"
-    />
+    <meta name="description" content="A little site that is still wip" />
     <link rel="icon" href="images/zazu.png" type="image/png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<link rel="stylesheet" href="style.css">-->
+    <script src="script.js" defer></script>
     <style>
       body {
         background-color: black;
@@ -41,6 +40,15 @@
         max-width: 100%; /* Responsive image */
         max-height: 100%; /* Responsive image */
         opacity: 0;
+      }
+
+      main {
+        margin-top: -21vh;
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center; /* Center children vertically */
+        align-items: center; /* Center children horizontally */
+        height: 100vh; /* Full viewport height */
       }
 
       .topbar {
@@ -114,6 +122,18 @@
         color: white; /* Change this to your desired color */
       }
 
+      .calc {
+        color: rgb(255, 255, 255); /* Default color (white) */
+        text-decoration: none; /* Remove underline by default */
+        text-decoration: underline;
+        transition: color 0.5s ease; /* Smooth transition for color */
+      }
+
+      .calc:hover {
+        color: rgb(60, 60, 60); /* Darker color on hover */
+        text-decoration: underline; /* Underline text on hover */
+      }
+
       @keyframes appear {
         0% {
           opacity: 0;
@@ -122,7 +142,6 @@
           opacity: 1;
         }
       }
-
       @keyframes disappear {
         0% {
           opacity: 1;
@@ -132,7 +151,6 @@
         }
       }
     </style>
-    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="topbar">
@@ -145,6 +163,7 @@
       <h1 id="cwelcome" class="maintext">Welcome!</h1>
       <p class="mainp">Site made with ❤️ by us!</p>
       <p class="mainp" id="countdown"></p>
+      <a class="mainp calc" href="calculator/cindex.html">Our calculator</a>
     </main>
 
     <aside>
@@ -154,6 +173,10 @@
         class="donthide"
         id="donthide"
       />
+      <p style="margin-top: 50vh">
+        <!--DO NOT EDIT THIS!!!!!, its a ZWSP, vsc should put a yellow box around it to see it, it is invisible.-->
+        ​
+      </p>
     </aside>
   </body>
 </html>

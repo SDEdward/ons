@@ -1,0 +1,132 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  cursor: default;
+}
+
+h1,
+p {
+  margin: 0; /* Remove default margin */
+}
+
+#donthide {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  position: absolute; /* Allows positioning with top */
+  top: 50%; /* Moves the element down to the middle of the container */
+  left: 50%; /* Moves the element to the middle of the container */
+  transform: translate(-50%, -50%); /* Adjusts the position to truly center the element */
+}
+
+.calculator {
+  background-color: #222; /* Dark background for the calculator */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+#display {
+  width: 100%;
+  height: 40px;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 10px;
+  border: 1px solid #555; /* Darker border for the display */
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #333; /* Dark background for display */
+  color: white; /* White text color */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Button color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s; /* Added transform for press effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Slightly shrink button on press */
+}
+
+button:focus {
+  outline: 2px solid #fff; /* White outline for focused button */
+}
+
+.double {
+  grid-column: span 2; /* Make the button take up two columns horizontally */
+}
+
+.topbar {
+  z-index: 2;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: fixed; /* Keep it fixed */
+  background-color: rgb(30, 30, 30); /* Use RGBA for semi-transparent background */
+  width: 100%; /* Full width */
+  height: calc(10vh + 2vw); /* Height scales with viewport height and width */
+  max-height: 19vh; /* Set a maximum height */
+  top: 2vh; /* Fixed position from the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  border-radius: 15px; /* Rounded corners */
+  padding: 0 2vw; /* Add horizontal padding */
+  box-sizing: border-box; /* Include padding in width calculation */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.us {
+  z-index: 7;
+  font-size: 5vw; /* Responsive font size */
+  font-family: Arial, Helvetica, sans-serif; /* Font family */
+  text-align: center; /* Center text within the item */
+  max-height: 20vh; /* Ensure it doesn't exceed the height of the topbar */
+  overflow: hidden; /* Hide overflow if text is too large */
+  min-height: 10vh; /* Set a minimum height for the text area */
+  cursor: pointer; /* Change cursor to pointer */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  flex: 1; /* Allow text to take available space */
+  opacity: 1; /* Fully opaque */
+}
+
+.us a {
+  color: rgb(255, 255, 255); /* Default color (white) */
+  text-decoration: none; /* Remove underline by default */
+  transition: color 0.5s ease; /* Smooth transition for color */
+}
+
+.us a:hover {
+  color: rgb(60, 60, 60); /* Darker color on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+body {
+  opacity: 0; /* Start with the body hidden */
+  transition: opacity 1.5s ease-in; /* Transition effect */
+}
+
+body.visible {
+  opacity: 1; /* Fully visible */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+    color: white;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    cursor: default;
+  }
+
+  h1,
+  p {
+    margin: 0; /* Remove default margin */
+  }
+
+  #donthide {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    position: absolute; /* Allows positioning with top */
+    top: 50%; /* Moves the element down to the middle of the container */
+    left: 50%; /* Moves the element to the middle of the container */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Adjusts the position to truly center the element */
+  }
+
+  .donthide {
+    max-width: 100%; /* Responsive image */
+    max-height: 100%; /* Responsive image */
+    opacity: 0;
+  }
+
+  .topbar {
+    z-index: 2;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: fixed; /* Keep it fixed */
+    background-color: rgba(
+      30,
+      30,
+      30,
+      0.5
+    ); /* Use RGBA for semi-transparent background */
+    width: 100%; /* Full width */
+    height: calc(
+      10vh + 2vw
+    ); /* Height scales with viewport height and width */
+    max-height: 19vh; /* Set a maximum height */
+    top: 2vh; /* Fixed position from the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    border-radius: 15px; /* Rounded corners */
+    padding: 0 2vw; /* Add horizontal padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  }
+
+  .us {
+    z-index: 7;
+    font-size: 5vw; /* Responsive font size */
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+    text-align: center; /* Center text within the item */
+    max-height: 20vh; /* Ensure it doesn't exceed the height of the topbar */
+    overflow: hidden; /* Hide overflow if text is too large */
+    min-height: 10vh; /* Set a minimum height for the text area */
+    cursor: pointer; /* Change cursor to pointer */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    flex: 1; /* Allow text to take available space */
+    opacity: 1; /* Fully opaque */
+  }
+
+  .us a {
+    color: rgb(255, 255, 255); /* Default color (white) */
+    text-decoration: none; /* Remove underline by default */
+    transition: color 0.5s ease; /* Smooth transition for color */
+  }
+
+  .us a:hover {
+    color: rgb(60, 60, 60); /* Darker color on hover */
+    text-decoration: underline; /* Underline text on hover */
+  }
+
+  .maintext {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 9vw; /* Responsive font size */
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+  }
+
+  .mainp {
+    text-align: center;
+    font-size: 2vw; /* Responsive font size */
+    font-family: Arial, Helvetica, sans-serif; /* Font family */
+  }
+
+  /* Visited and Active link color */
+  a:visited,
+  a:active {
+    color: white; /* Change this to your desired color */
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes disappear {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
