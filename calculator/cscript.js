@@ -1,5 +1,4 @@
 function appendToDisplay(value) {
-    // Append '×' for multiplication
     if (value === '*') {
         value = '×';
     }
@@ -12,32 +11,37 @@ function clearDisplay() {
 
 function backspace() {
     const display = document.getElementById('display');
-    display.value = display.value.slice(0, -1); // Remove the last character
+    display.value = display.value.slice(0, -1);
 }
 
 function calculateResult() {
     const display = document.getElementById('display');
+    const expression = display.value.replace(/×/g, '*');
+
+    if (!expression) {
+        display.value = 'Error';
+        return;
+    }
+
     try {
-        // Replace '×' with '*' for evaluation
-        const expression = display.value.replace(/×/g, '*');
-        display.value = eval(expression);
+        console.log("Evaluating expression:", expression);
+        const parsedExpression = math.parse(expression);
+        display.value = parsedExpression.evaluate();
     } catch (error) {
-        display.value = 'Error'; // Display error if evaluation fails
+        console.error("Error evaluating expression:", error);
+        display.value = 'Error';
     }
 }
 
-// Function to add the 'visible' class
 function fadeIn() {
     document.body.classList.add('visible');
 }
 
-// Function to handle unfocus event
 function handleBlur() {
     document.body.classList.remove('visible');
-    setTimeout(fadeIn, 100); // Delay to allow the fade-out effect to complete
+    setTimeout(fadeIn, 100);
 }
 
-// Event listeners for focus and blur
-window.addEventListener('load', fadeIn); // Fade in on load
-window.addEventListener('blur', handleBlur); // Fade out on unfocus
-window.addEventListener('focus', fadeIn); // Fade in on focus
+window.addEventListener('load', fadeIn);
+window.addEventListener('blur', handleBlur);
+window.addEventListener('focus', fadeIn);

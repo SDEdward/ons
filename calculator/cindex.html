@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <meta
-    name="description"
-    content="A little calculator that is still wip"
-    />
+    <meta name="description" content="A little calculator that is still wip" />
     <link rel="icon" href="images/zazu.png" type="image/png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="cstyle.css">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
     <script src="cscript.js" defer></script>
-
 </head>
 <body>
     <p class="us">
@@ -24,7 +20,7 @@
     <div class="calculator" id="donthide">
         <input type="text" id="display" disabled>
         <div class="buttons">
-            <button class="double" onclick="clearDisplay()">C</button> <!-- Make C button double size horizontally -->
+            <button class="double" onclick="clearDisplay()">C</button>
             <button onclick="backspace()">←</button>
             <button onclick="appendToDisplay('/')">/</button>
             <button onclick="appendToDisplay('1')">1</button>
@@ -39,12 +35,10 @@
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
             <button onclick="appendToDisplay('*')">×</button>
-            <button class="double" onclick="appendToDisplay('0')">0</button> <!-- Keep the 0 button double size -->
+            <button class="double" onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="calculateResult()">=</button>
         </div>
     </div>
-
 </body>
-
 </html>
