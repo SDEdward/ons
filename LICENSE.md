@@ -15,4 +15,4 @@ Everyone is permitted to copy and distribute verbatim or modified copies of this
 
 --- 
 
-<img src="\images\WTFPL_logo.svg" alt="WTFPL logo" width="100"/>
+<img src="..\images\WTFPL_logo.svg" alt="WTFPL logo" width="100"/>
