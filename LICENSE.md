@@ -4,7 +4,7 @@
 # DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
 ## Version 2, December 2004
 
-Copyright (C) 2024 Edward suooprt@safacpealdraq.eu
+Copyright (C) 2024 Edward support@safacpealdraq.eu
 
 Everyone is permitted to copy and distribute verbatim or modified copies of this license document, and changing it is allowed as long as the name is changed.
 
@@ -15,4 +15,4 @@ Everyone is permitted to copy and distribute verbatim or modified copies of this
 
 --- 
 
-<img src="..\images\WTFPL_logo.svg" alt="WTFPL logo" width="100"/>
+<img src="\images\WTFPL_logo.svg" alt="WTFPL logo" width="100"/>

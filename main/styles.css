@@ -1,5 +1,3 @@
-$font: "Arial", "Helvetica", sans-serif;
-
 body {
   background-color: black;
   color: white;
@@ -71,7 +69,7 @@ main {
 .us {
   z-index: 7;
   font-size: 5vw;
-  font-family: $font;
+  font-family: "Arial", "Helvetica", sans-serif;
   text-align: center;
   max-height: 20vh;
   overflow: hidden;
@@ -98,14 +96,14 @@ main {
   margin-top: 20%;
   text-align: center;
   font-size: 9vw;
-  font-family: $font;
+  font-family: "Arial", "Helvetica", sans-serif;
   z-index: 2;
 }
 
 .mainp {
   text-align: center;
   font-size: 2vw;
-  font-family: $font;
+  font-family: "Arial", "Helvetica", sans-serif;
   z-index: 2;
 }
 
@@ -132,7 +130,7 @@ a:active {
   top: 90vh;
   text-align: center;
   font-size: 1vw;
-  font-family: $font;
+  font-family: "Arial", "Helvetica", sans-serif;
   z-index: 3;
   color: rgb(60, 60, 60);
   text-decoration: none;
