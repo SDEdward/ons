@@ -14,7 +14,7 @@ Take a moment to check out the project and see what we’re all about. Look thro
 
 ### 2. Check Out the Rules
 
-Make sure to read our [Laws and Team Chat File](LAWS_CHAT.md). It’s got some important info on how we roll around here.
+Make sure to read our [Laws](LAWS_CHAT.md). It’s got some important info on how we roll around here.
 
 ### 3. Join the Fun
 

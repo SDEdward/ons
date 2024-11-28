@@ -8,7 +8,7 @@ This security policy outlines the guidelines and procedures for reporting and ad
 
 If you discover a security vulnerability in this project, please report it to us as soon as possible. We appreciate your help in keeping our project secure. 
 
-1. **Email**: Send an email to edwardstrowaway@gmail.com with the subject line "Security Vulnerability Report".
+1. **Email**: Send an email to support@safacpealdraq.eu with the subject line "Security Vulnerability Report".
 2. **Details**: Include a detailed description of the vulnerability, steps to reproduce it, and any other relevant information.
 3. **Confidentiality**: We will treat your report with confidentiality and will not disclose your identity without your consent.
 

@@ -26,7 +26,7 @@ Swearing gets a separate section cause it is allowed but not slurs or against so
 
 ## Reporting Issues
 
-If you encounter any behavior that violates this Code of Conduct, please report it to me (SDEdward). We take these matters seriously and will address them promptly.
+If you encounter any behavior that violates this Code of Conduct, please report it to me (SDEdward) or support@safacpealdraq.eu . We take these matters seriously and will address them promptly.
 
 ## Consequences
 

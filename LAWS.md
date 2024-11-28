@@ -4,11 +4,12 @@ In order to contribute to or develop this project, you must follow this set of l
 
 ---
 
-## 1. SCSS Interaction
+## 1. ~~SCSS Interaction~~
 
-- Do not interact with the SCSS until this law is deleted.
-- I'll learn how to use it eventually!
-- Destroying the SCSS will result in a sentence to be decided by the jury based on the severity of the situation.
+- ~~Do not interact with the SCSS until this law is deleted.~~
+- ~~I'll learn how to use it eventually!~~
+- ~~Destroying the SCSS will result in a sentence to be decided by the jury based on the severity of the situation.~~
+- Law abolished
 
 ---
 
@@ -24,7 +25,7 @@ In order to contribute to or develop this project, you must follow this set of l
 
 - Change the sitemap so the last change part is updated when you make a change.
 - **DON'T CHANGE ANYTHING ELSE!**
-- This sentence is not applied to this law, but it is not nice to neglect changing the last modified date. :(
+- This sentence is not applied to this law, but it is not nice to ignore changing the last modified date. :(
 
 ---
 
