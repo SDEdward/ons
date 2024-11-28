@@ -26,4 +26,17 @@
       <image:title>Rotate</image:title>
     </image:image>
   </url>
+
+  <url>
+    <loc>https://ons.safacpealdraq.com/your-page</loc>
+    <lastmod>2024-10-09</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+        <image:loc>https://ons.safacpealdraq.com/images/zazu.png</image:loc>
+        <image:caption>Zazu cat</image:caption>
+        <image:title>Zazu</image:title>
+    </image:image>
+</url>
+
 </urlset>

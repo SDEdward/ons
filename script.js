@@ -25,9 +25,9 @@ if (!getCookie("visited")) {
 }
 
 function updateCountdown() {
-  const targetDateE = new Date("2024-10-14T00:00:00"); // Edward's birthday
+  const targetDateE = new Date("2025-10-14T00:00:00"); // Edward's birthday
   const targetDateS = new Date("2024-01-08T00:00:00"); // Stefan's birthday
-  const targetDateNew = new Date("2011-12-12T00:00:00"); // Petru's birthday
+  const targetDateNew = new Date("2024-12-12T00:00:00"); // Petru's birthday
   const now = new Date();
 
   let nextBirthday;
