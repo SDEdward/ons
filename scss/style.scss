@@ -19,12 +19,29 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .donthide {
   max-width: 100%;
   max-height: 100%;
-  opacity: 0;
+  opacity: 0; /* Keep this if you want it invisible */
+  z-index: 1; /* This is fine */
+  position: absolute; /* This is fine */
+  top: 50%; /* Center it vertically */
+  left: 50%; /* Center it horizontally */
+  transform: translate(-50%, -50%); /* Center it */
+}
+
+main {
+  margin-top: -21vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 99999999; /* Keep your high z-index */
+  position: relative; /* Add this line */
 }
 
 .topbar {
@@ -77,17 +94,32 @@ p {
   text-align: center;
   font-size: 9vw;
   font-family: Arial, Helvetica, sans-serif;
+  z-index: 2;
 }
 
 .mainp {
   text-align: center;
   font-size: 2vw;
   font-family: Arial, Helvetica, sans-serif;
+  z-index: 2;
 }
 
 a:visited,
 a:active {
   color: white;
+}
+
+.calc {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-decoration: underline;
+  transition: color 0.5s ease;
+  z-index: 2;
+}
+
+.calc:hover {
+  color: rgb(60, 60, 60);
+  text-decoration: underline;
 }
 
 @keyframes appear {
@@ -98,7 +130,6 @@ a:active {
     opacity: 1;
   }
 }
-
 @keyframes disappear {
   0% {
     opacity: 1;

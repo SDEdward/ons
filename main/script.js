@@ -25,15 +25,14 @@ if (!getCookie("visited")) {
 }
 
 function updateCountdown() {
-  const targetDateE = new Date("2025-10-14T00:00:00"); // Edward's birthday
-  const targetDateS = new Date("2024-01-08T00:00:00"); // Stefan's birthday
-  const targetDateNew = new Date("2024-12-12T00:00:00"); // Petru's birthday
+  const targetDateE = new Date("2025-10-14T00:00:00"); 
+  const targetDateS = new Date("2024-01-08T00:00:00"); 
+  const targetDateNew = new Date("2024-12-12T00:00:00"); 
   const now = new Date();
 
   let nextBirthday;
   let birthdayName;
 
-  // Determine the next birthday
   if (now < targetDateNew) {
     nextBirthday = targetDateNew;
     birthdayName = "Petru's birthday";
@@ -44,31 +43,29 @@ function updateCountdown() {
     nextBirthday = targetDateE;
     birthdayName = "Edward's birthday";
   } else {
-    nextBirthday = new Date("2025-01-08T00:00:00"); // Next Stefan's birthday
+    nextBirthday = new Date("2025-01-08T00:00:00");
     birthdayName = "Stefan's birthday";
   }
 
   const timeDifference = nextBirthday - now;
 
-  // Calculate days, hours, minutes, and seconds
   const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const hours = Math.floor(
+    (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
   const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-  // Update the countdown display
   document.getElementById("countdown").innerHTML = `
         ${days} Days, ${hours} Hours, ${minutes} Minutes, ${seconds} Seconds until ${birthdayName}!
     `;
 
-  // Check if the countdown is complete
   if (timeDifference < 0) {
     clearInterval(countdownInterval);
     document.getElementById("countdown").innerHTML = "Happy birthday! 🎉🎊";
   }
 }
 
-// Set up the countdown interval
 const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
 
