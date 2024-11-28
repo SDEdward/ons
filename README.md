@@ -23,3 +23,5 @@ To get started with **Ons**, simply follow the instructions in the setup guide.
 Please refer to our [LICENSE.md](LICENSE.md) file for details on the licensing of this project.
 
 Thank you for checking out **Ons**! We hope you enjoy the improvements and find the site more user-friendly. If you have any feedback or suggestions, feel free to reach out!
+
+yes, i wrote with chatgpt
