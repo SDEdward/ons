@@ -1,150 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>our new site</title>
     <meta name="description" content="A little site that is still wip" />
     <link rel="icon" href="..\images\zazu.png" type="image/png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script src="script.js" defer></script>
-
     <style>
-      body {
-        background-color: black;
-        color: white;
-        height: 100vh;
-        margin: 0;
-        cursor: default;
-      }
-
-      h1,
-      p {
-        margin: 0;
-      }
-
-      #donthide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      .donthide {
-        max-width: 100%;
-        max-height: 100%;
-        opacity: 0;
-      }
-
-      main {
-        margin-top: -21vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-      .topbar {
-        z-index: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        background-color: rgba(30, 30, 30, 0.5);
-        width: 100%;
-        height: calc(10vh + 2vw);
-        max-height: 19vh;
-        top: 2vh;
-        left: 0;
-        right: 0;
-        border-radius: 15px;
-        padding: 0 2vw;
-        box-sizing: border-box;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      }
-
-      .us {
-        z-index: 7;
-        font-size: 5vw;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        max-height: 20vh;
-        overflow: hidden;
-        min-height: 10vh;
-        cursor: pointer;
-        padding: 0;
-        margin: 0;
-        flex: 1;
-        opacity: 1;
-      }
-
-      .us a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        transition: color 0.5s ease;
-      }
-
-      .us a:hover {
-        color: rgb(60, 60, 60);
-        text-decoration: underline;
-      }
-
-      .maintext {
-        margin-top: 20%;
-        text-align: center;
-        font-size: 9vw;
-        font-family: Arial, Helvetica, sans-serif;
-        z-index: 2;
-      }
-
-      .mainp {
-        text-align: center;
-        font-size: 2vw;
-        font-family: Arial, Helvetica, sans-serif;
-        z-index: 2;
-      }
-
-      a:visited,
-      a:active {
-        color: white;
-      }
-
-      .calc {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        text-decoration: underline;
-        transition: color 0.5s ease;
-        z-index: 2;
-      }
-
-      .calc:hover {
-        color: rgb(60, 60, 60);
-        text-decoration: underline;
-      }
-
-      @keyframes appear {
-        0% {
-          opacity: 0;
+        body {
+            background-color: black;
+            color: white;
+            height: 100vh;
+            margin: 0;
+            cursor: default;
         }
-        100% {
-          opacity: 1;
+
+        h1,
+        p {
+            margin: 0;
         }
-      }
-      @keyframes disappear {
-        0% {
-          opacity: 1;
+
+        #donthide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
         }
-        100% {
-          opacity: 0;
+
+        .donthide {
+            max-width: 100%;
+            max-height: 100%;
+            opacity: 0; /* Keep this if you want it invisible */
+            z-index: 1; /* This is fine */
+            position: absolute; /* This is fine */
+            top: 50%; /* Center it vertically */
+            left: 50%; /* Center it horizontally */
+            transform: translate(-50%, -50%); /* Center it */
         }
-      }
+
+        main {
+            margin-top: -21vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            z-index: 99999999; /* Keep your high z-index */
+            position: relative; /* Add this line */
+        }
+
+        .topbar {
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            background-color: rgba(30, 30, 30, 0.5);
+            width: 100%;
+            height: calc(10vh + 2vw);
+            max-height: 19vh;
+            top: 2vh;
+            left: 0;
+            right: 0;
+            border-radius: 15px;
+            padding: 0 2vw;
+            box-sizing: border-box;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .us {
+            z-index: 7;
+            font-size: 5vw;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            max-height: 20vh;
+            overflow: hidden;
+            min-height: 10vh;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            flex: 1;
+            opacity: 1;
+        }
+
+        .us a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            transition: color 0.5s ease;
+        }
+
+        .us a:hover {
+            color: rgb(60, 60, 60);
+            text-decoration: underline;
+        }
+
+        .maintext {
+            margin-top: 20%;
+            text-align: center;
+            font-size: 9vw;
+            font-family: Arial, Helvetica, sans-serif;
+            z-index: 2;
+        }
+
+        .mainp {
+            text-align: center;
+            font-size: 2vw;
+            font-family: Arial, Helvetica, sans-serif;
+            z-index: 2;
+        }
+
+        a:visited,
+        a:active {
+            color: white;
+        }
+
+        .calc {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            text-decoration: underline;
+            transition: color 0.5s ease;
+            z-index: 2;
+        }
+
+        .calc:hover {
+            color: rgb(60, 60, 60);
+            text-decoration: underline;
+        }
+
+        @keyframes appear {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes disappear {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
     </style>
-  </head>
+</head>
   <body>
     <header class="topbar">
       <p class="us">
@@ -152,7 +158,7 @@
       </p>
     </header>
 
-    <main class="maindir hide" id="hide">
+    <main style="z-index: 99999999" class="maindir hide" id="hide">
       <h1 id="cwelcome" class="maintext">Welcome!</h1>
       <p class="mainp">Site made with ❤️ by us!</p>
       <p class="mainp" id="countdown"></p>
