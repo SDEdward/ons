@@ -74,6 +74,18 @@
   </url>
 
   <url>
+    <loc>https://ons.safacpealdraq.eu/images/sigma.svg</loc>
+    <lastmod>2024-11-29T01:29:17Z</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://ons.safacpealdraq.eu/images/sigma.svg</image:loc>
+      <image:caption>sigma</image:caption>
+      <image:title>sigma letter</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://ons.safacpealdraq.eu/robots.txt</loc>
     <lastmod>2024-11-28T13:00:00Z</lastmod>
     <changefreq>never</changefreq>
