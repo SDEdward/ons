@@ -38,3 +38,5 @@ We want this to be a friendly space, so please check out our [Code of Conduct](C
 If you’re unsure about anything or need help, just reach out in the team chat or open an issue. We’re here to help!
 
 Thanks again for wanting to contribute! Let’s make something awesome together!
+
+yes, i wrote with chatgpt

@@ -37,3 +37,4 @@ Participants who violate this Code of Conduct may be warned, temporarily suspend
 Thank you for helping us create a positive and inclusive community. Together, we can make this project a great place for everyone!
 
 I hope i dont need to ever do a report.
+yes, i wrote with chatgpt
