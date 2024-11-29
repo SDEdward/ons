@@ -1,8 +1,4 @@
-# .cpanel.yml
-version: 1
+---
 deployment:
-  git:
-    repository: "https://github.com/SDEdward/ons"  # Replace with your Git repository URL
-    branch: "main"  # Replace with the branch you want to deploy
-    path: "ons_repo"  # Path where the site should be deployed
-    auto_deploy: true  # Automatically deploy on push
+  tasks:
+    - export DEPLOYPATH=/home/ons_repo
