@@ -1,0 +1,180 @@
+$font: "Arial", "Helvetica", sans-serif;
+
+body {
+  background-color: black;
+  color: white;
+  height: 200vh;
+  margin: 0;
+  cursor: default;
+  overflow-y: visible;
+  max-height: 200vh;
+  min-height: 200vh;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+#donthide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.donthide {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0; /* Keep this if you want it invisible */
+  z-index: 1; /* This is fine */
+  position: absolute; /* This is fine */
+  top: 50%; /* Center it vertically */
+  left: 50%; /* Center it horizontally */
+  transform: translate(-50%, -50%); /* Center it */
+}
+
+main {
+  margin-top: -21vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 20; /* Keep your high z-index */
+  position: relative; /* Add this line */
+}
+
+.topbar {
+  z-index: 100;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: linear-gradient(
+    45deg,
+    rgba(106, 48, 185, 0.5),
+    rgba(20, 20, 20, 0.5)
+  );
+  background-color: rgba(30, 30, 30, 0.5);
+  width: 100%;
+  height: calc(10vh + 2vw);
+  max-height: 16vh;
+  top: 2vh;
+  left: 0;
+  right: 0;
+  border-radius: 15px;
+  padding: 0 2vw;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.us {
+  z-index: 100;
+  font-size: 5vw;
+  font-family: $font;
+  text-align: center;
+  max-height: 20vh;
+  overflow: hidden;
+  min-height: 10vh;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  opacity: 1;
+}
+
+.us a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.us a:hover {
+  color: rgb(60, 60, 60);
+  text-decoration: underline;
+}
+
+.maintext {
+  margin-top: 20%;
+  text-align: center;
+  font-size: 9vw;
+  font-family: $font;
+  z-index: 2;
+}
+
+.mainp {
+  text-align: center;
+  font-size: 2vw;
+  font-family: $font;
+  z-index: 2;
+}
+
+a:visited,
+a:active {
+  color: white;
+}
+
+.calc {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-decoration: underline;
+  transition: color 0.5s ease;
+  z-index: 2;
+}
+
+.calc:hover {
+  color: rgb(60, 60, 60);
+  text-decoration: underline;
+}
+
+.downbar {
+  z-index: 2;
+  display: flex; /* Corrected from flexbox to flex */
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  top: 90vh; /* Adjust as needed */
+  overflow: hidden;
+  height: 10vh;
+  min-height: 15vh;
+  background-color: rgb(10, 10, 10);
+}
+
+.contact {
+  position: relative;
+  top: 0vh; /* This may need adjustment based on your layout */
+  font-size: 1vw;
+  font-family: $font; /* Ensure $font is defined */
+  z-index: 3;
+  color: rgb(60, 60, 60);
+  text-decoration: none;
+}
+
+
+.contact a {
+  text-decoration: underline;
+  color: rgb(0, 0, 138);
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
