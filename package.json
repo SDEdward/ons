@@ -1,0 +1,22 @@
+{
+  "name": "ons",
+  "version": "1.0.0",
+  "description": "ons test",
+  "main": "main/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SDEdward/ons.git"
+  },
+  "author": "SDEdward",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/SDEdward/ons/issues"
+  },
+  "homepage": "https://github.com/SDEdward/ons#readme",
+  "dependencies": {
+    "sass": "^1.81.0"
+  }
+}
