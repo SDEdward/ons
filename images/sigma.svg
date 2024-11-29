@@ -1,0 +1,7 @@
+<svg width="50" height="200" viewBox="0 0 50 200">
+
+    <rect width="125" height="20" x="0" y="0"></rect>
+    <rect width="133.11" height="20" x="0" y="0" transform="rotate(45, 0, 20)"></rect>
+    <rect width="133.14" height="20" x="0" y="180" transform="rotate(315, 0, 180)"></rect>
+    <rect width="125" height="20" x="0" y="180"></rect>
+</svg>

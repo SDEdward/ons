@@ -25,9 +25,10 @@ if (!getCookie("visited")) {
 }
 
 function updateCountdown() {
-  const targetDateE = new Date("2025-10-14T00:00:00"); 
-  const targetDateS = new Date("2024-01-08T00:00:00"); 
-  const targetDateNew = new Date("2024-12-12T00:00:00"); 
+  const targetDateE = new Date("2025-10-14T00:00:00");
+  const targetDateS = new Date("2025-01-08T00:00:00");
+  const targetDateD = new Date("2025-01-18T00:00:00");
+  const targetDateNew = new Date("2024-12-12T00:00:00");
   const now = new Date();
 
   let nextBirthday;
@@ -39,6 +40,9 @@ function updateCountdown() {
   } else if (now < targetDateS) {
     nextBirthday = targetDateS;
     birthdayName = "Stefan's birthday";
+  } else if (now < targetDateD) {
+    nextBirthday = targetDateD;
+    birthdayName = "Daria's birthday";
   } else if (now < targetDateE) {
     nextBirthday = targetDateE;
     birthdayName = "Edward's birthday";

@@ -45,20 +45,25 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  z-index: 99999999; /* Keep your high z-index */
+  z-index: 20; /* Keep your high z-index */
   position: relative; /* Add this line */
 }
 
 .topbar {
-  z-index: 2;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
+  background: linear-gradient(
+    45deg,
+    rgba(106, 48, 185, 0.5),
+    rgba(20, 20, 20, 0.5)
+  );
   background-color: rgba(30, 30, 30, 0.5);
   width: 100%;
   height: calc(10vh + 2vw);
-  max-height: 19vh;
+  max-height: 16vh;
   top: 2vh;
   left: 0;
   right: 0;
@@ -66,10 +71,11 @@ main {
   padding: 0 2vw;
   box-sizing: border-box;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
 }
 
 .us {
-  z-index: 7;
+  z-index: 100;
   font-size: 5vw;
   font-family: $font;
   text-align: center;
@@ -127,9 +133,18 @@ a:active {
   text-decoration: underline;
 }
 
+.downbar {
+  display: flexbox;
+  position: relative;
+  top: 85vh;
+  overflow: hidden;
+  height: 15vh;
+  background-color: rgb(20, 20, 20);
+}
+
 .contact {
   position: relative;
-  top: 90vh;
+  top: 5vh;
   text-align: center;
   font-size: 1vw;
   font-family: $font;
