@@ -140,9 +140,16 @@ a:active {
   background-color: rgb(10, 10, 10);
 }
 
+.cat {
+  margin-left: 90%;
+  height: 100%;
+  width: auto;
+  z-index: 4;
+}
+
 .contact {
-  position: relative;
-  top: 0vh; /* This may need adjustment based on your layout */
+  position: absolute;
+  top: 35%; /* This may need adjustment based on your layout */
   font-size: 1vw;
   font-family: "Arial", "Helvetica", sans-serif; /* Ensure $font is defined */
   z-index: 3;
