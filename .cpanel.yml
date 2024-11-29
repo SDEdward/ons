@@ -1,4 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/ons_repo
+    - export DEPLOYPATH=/home/safacpea/ons_repo
