@@ -55,11 +55,15 @@ main {
   justify-content: center;
   align-items: center;
   position: fixed;
-  background: linear-gradient(45deg, rgba(106, 48, 185, 0.5), rgba(30, 30, 30, 0.5));
+  background: linear-gradient(
+    45deg,
+    rgba(106, 48, 185, 0.5),
+    rgba(20, 20, 20, 0.5)
+  );
   background-color: rgba(30, 30, 30, 0.5);
   width: 100%;
   height: calc(10vh + 2vw);
-  max-height: 19vh;
+  max-height: 16vh;
   top: 2vh;
   left: 0;
   right: 0;
@@ -129,9 +133,18 @@ a:active {
   text-decoration: underline;
 }
 
+.downbar {
+  display: flexbox;
+  position: relative;
+  top: 85vh;
+  overflow: hidden;
+  height: 15vh;
+  background-color: rgb(20, 20, 20);
+}
+
 .contact {
   position: relative;
-  top: 90vh;
+  top: 5vh;
   text-align: center;
   font-size: 1vw;
   font-family: $font;

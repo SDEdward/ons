@@ -25,10 +25,10 @@ if (!getCookie("visited")) {
 }
 
 function updateCountdown() {
-  const targetDateE = new Date("2025-10-14T00:00:00"); 
-  const targetDateS = new Date("2025-01-08T00:00:00"); 
+  const targetDateE = new Date("2025-10-14T00:00:00");
+  const targetDateS = new Date("2025-01-08T00:00:00");
   const targetDateD = new Date("2025-01-18T00:00:00");
-  const targetDateNew = new Date("2024-12-12T00:00:00"); 
+  const targetDateNew = new Date("2024-12-12T00:00:00");
   const now = new Date();
 
   let nextBirthday;
@@ -37,16 +37,13 @@ function updateCountdown() {
   if (now < targetDateNew) {
     nextBirthday = targetDateNew;
     birthdayName = "Petru's birthday";
-  } 
-  else if (now < targetDateS) {
+  } else if (now < targetDateS) {
     nextBirthday = targetDateS;
     birthdayName = "Stefan's birthday";
-  } 
-  else if (now < targetDateD) {
+  } else if (now < targetDateD) {
     nextBirthday = targetDateD;
-    birthdayName = "Daria's birthday"; 
-  } 
-  else if (now < targetDateE) {
+    birthdayName = "Daria's birthday";
+  } else if (now < targetDateE) {
     nextBirthday = targetDateE;
     birthdayName = "Edward's birthday";
   } else {
@@ -75,8 +72,6 @@ function updateCountdown() {
 
 const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
-
-
 
 function checkOrientation() {
   if (window.innerHeight > window.innerWidth) {
