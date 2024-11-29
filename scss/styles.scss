@@ -51,7 +51,7 @@ main {
 
 .topbar {
   z-index: 100;
-  display: flex;
+  display: flexbox;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -134,24 +134,28 @@ a:active {
 }
 
 .downbar {
-  display: flexbox;
+  z-index: 2;
+  display: flex; /* Corrected from flexbox to flex */
   position: relative;
-  top: 85vh;
+  align-items: center;
+  justify-content: center;
+  top: 90vh; /* Adjust as needed */
   overflow: hidden;
-  height: 15vh;
-  background-color: rgb(20, 20, 20);
+  height: 10vh;
+  min-height: 15vh;
+  background-color: rgb(10, 10, 10);
 }
 
 .contact {
   position: relative;
-  top: 5vh;
-  text-align: center;
+  top: 0vh; /* This may need adjustment based on your layout */
   font-size: 1vw;
-  font-family: $font;
+  font-family: $font; /* Ensure $font is defined */
   z-index: 3;
   color: rgb(60, 60, 60);
   text-decoration: none;
 }
+
 
 .contact a {
   text-decoration: underline;
