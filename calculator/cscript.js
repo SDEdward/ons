@@ -45,3 +45,21 @@ function handleBlur() {
 window.addEventListener("load", fadeIn);
 window.addEventListener("blur", handleBlur);
 window.addEventListener("focus", fadeIn);
+
+function checkDevice() {
+  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+  const dontGoElement = document.getElementById("dontgo");
+  const goElement = document.getElementById("go");
+
+  if (isMobile) {
+    dontGoElement.style.animation = "appear 0.5s forwards";
+    goElement.style.animation = "disappear 0.5s forwards";
+  } else {
+    goElement.style.animation = "appear 0.5s forwards";
+    dontGoElement.style.animation = "disappear 0.5s forwards";
+  }
+}
+
+// Call checkDevice on load and resize
+window.addEventListener("load", checkDevice);
+window.addEventListener("resize", checkDevice);
